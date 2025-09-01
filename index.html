@@ -1,51 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Lottie Hover + Click</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
-  <style>
-    body {
-      margin: 0;
-      background: transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    #lottie-container {
-      width: 300px;
-      height: 300px;
-      cursor: pointer;
-    }
-  </style>
+    <title>My Homepage</title>
 </head>
 <body>
-  <div id="lottie-container"></div>
 
-  <script>
-    var anim = lottie.loadAnimation({
-      container: document.getElementById('lottie-container'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: false,
-      path: "https://lottie.host/5edea683-fc41-4a43-b153-f2cb43eb2357/1hJkAZ9sWv.json"
-    });
+    <h1>Welcome to my website!</h1>
+    <p>This is the homepage.</p>
 
-    // Play animation on hover
-    document.getElementById("lottie-container").addEventListener("mouseenter", function() {
-      anim.play();
-    });
+    <a href="page-two.html">Go to Page Two</a>
 
-    // Stop animation when not hovering
-    document.getElementById("lottie-container").addEventListener("mouseleave", function() {
-      anim.stop();
-    });
-
-    // Open link on click
-    document.getElementById("lottie-container").addEventListener("click", function() {
-      window.open("https://www.google.com", "_blank"); // Change link here
-    });
-  </script>
 </body>
 </html>
